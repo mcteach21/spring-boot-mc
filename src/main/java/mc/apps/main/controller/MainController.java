@@ -10,11 +10,11 @@ public class MainController {
 
     @GetMapping("/")
     public String index(){
-        return DEFAUlT_VIEW;
+        return "default";
     }
 
-    @GetMapping("/{page}")
-    public String display(@PathVariable() String page ){
-        return "".equals(page)?DEFAUlT_VIEW:page;
-    }
+//    @GetMapping("/{page}")
+//    public String display(@PathVariable() String page ){
+//        return "".equals(page)?DEFAUlT_VIEW:page;
+//    }
 }
